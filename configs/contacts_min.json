@@ -1,0 +1,12 @@
+{
+  "_comment": "Minimal contact card: provenance and confidence OFF, missing values OMITTED rather than null. Demonstrates the toggles and the on_missing=omit policy.",
+  "fields": [
+    { "path": "name", "from": "full_name", "type": "string", "required": true },
+    { "path": "email", "from": "emails[0]", "type": "string", "on_missing": "omit" },
+    { "path": "phone", "from": "phones[0]", "type": "string", "on_missing": "omit" },
+    { "path": "linkedin", "from": "links.linkedin", "type": "string", "on_missing": "omit" }
+  ],
+  "include_confidence": false,
+  "include_provenance": false,
+  "on_missing": "omit"
+}

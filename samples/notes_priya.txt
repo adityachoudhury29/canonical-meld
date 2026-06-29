@@ -1,0 +1,8 @@
+Candidate: Priya Sharma
+
+Reached out on LinkedIn, quick intro call done. Best email is
+priya.sharma@example.com, mobile 9876543210.
+
+7+ years of backend experience, currently at Acme Corp as a Senior Backend
+Engineer. Very strong in Python and Kubernetes, has also used React on a side
+project. Open to relocation. Github: github.com/priyasharma

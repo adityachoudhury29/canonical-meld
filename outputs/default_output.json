@@ -1,0 +1,373 @@
+[
+  {
+    "candidate_id": "cand_e700c63c09b6",
+    "full_name": "Priya Sharma",
+    "emails": [
+      "priya.sharma@example.com",
+      "p.sharma@acme.com"
+    ],
+    "phones": [
+      "+919876543210"
+    ],
+    "location": {
+      "city": "Bengaluru",
+      "region": "Karnataka",
+      "country": "IN"
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/priyasharma",
+      "github": "https://github.com/priyasharma",
+      "portfolio": "https://priya.dev",
+      "other": []
+    },
+    "headline": "Senior Backend Engineer",
+    "years_experience": 7,
+    "skills": [
+      {
+        "name": "Go",
+        "confidence": 0.99,
+        "sources": [
+          "ats_json",
+          "resume",
+          "github"
+        ]
+      },
+      {
+        "name": "Python",
+        "confidence": 0.99,
+        "sources": [
+          "ats_json",
+          "resume",
+          "github",
+          "recruiter_notes"
+        ]
+      },
+      {
+        "name": "Kubernetes",
+        "confidence": 0.98,
+        "sources": [
+          "ats_json",
+          "resume",
+          "recruiter_notes"
+        ]
+      },
+      {
+        "name": "PostgreSQL",
+        "confidence": 0.97,
+        "sources": [
+          "ats_json",
+          "resume"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "confidence": 0.9,
+        "sources": [
+          "ats_json"
+        ]
+      },
+      {
+        "name": "Docker",
+        "confidence": 0.7,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "REST",
+        "confidence": 0.7,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Shell",
+        "confidence": 0.52,
+        "sources": [
+          "github"
+        ]
+      },
+      {
+        "name": "React",
+        "confidence": 0.5,
+        "sources": [
+          "recruiter_notes"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Acme Corp",
+        "title": "Senior Backend Engineer",
+        "start": "2021-03",
+        "end": null,
+        "summary": "Built and scaled payment services handling millions of requests per day."
+      },
+      {
+        "company": "Globex",
+        "title": "Backend Engineer",
+        "start": "2018-06",
+        "end": "2021-02",
+        "summary": "Owned the data ingestion pipeline and on-call rotation."
+      }
+    ],
+    "education": [
+      {
+        "institution": "IIT Bombay",
+        "degree": "B.Tech",
+        "field": "Computer Science",
+        "end_year": 2018
+      }
+    ],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "ats_json",
+        "method": "ats_field:name"
+      },
+      {
+        "field": "full_name",
+        "source": "recruiter_csv",
+        "method": "csv_column:name"
+      },
+      {
+        "field": "full_name",
+        "source": "resume",
+        "method": "resume_header:name"
+      },
+      {
+        "field": "emails",
+        "source": "ats_json",
+        "method": "ats_field:email"
+      },
+      {
+        "field": "emails",
+        "source": "recruiter_csv",
+        "method": "csv_column:email"
+      },
+      {
+        "field": "emails",
+        "source": "resume",
+        "method": "regex:email"
+      },
+      {
+        "field": "emails",
+        "source": "recruiter_notes",
+        "method": "regex:email"
+      },
+      {
+        "field": "phones",
+        "source": "ats_json",
+        "method": "ats_field:phone"
+      },
+      {
+        "field": "phones",
+        "source": "recruiter_csv",
+        "method": "csv_column:phone"
+      },
+      {
+        "field": "location.city",
+        "source": "ats_json",
+        "method": "ats_field:location"
+      },
+      {
+        "field": "location.city",
+        "source": "recruiter_csv",
+        "method": "csv_column:location"
+      },
+      {
+        "field": "location.city",
+        "source": "github",
+        "method": "github_api:location"
+      },
+      {
+        "field": "location.region",
+        "source": "ats_json",
+        "method": "ats_field:location"
+      },
+      {
+        "field": "location.country",
+        "source": "ats_json",
+        "method": "ats_field:location"
+      },
+      {
+        "field": "location.country",
+        "source": "recruiter_csv",
+        "method": "csv_column:location"
+      },
+      {
+        "field": "location.country",
+        "source": "resume",
+        "method": "resume_header:location"
+      },
+      {
+        "field": "location.country",
+        "source": "github",
+        "method": "github_api:location"
+      },
+      {
+        "field": "links.linkedin",
+        "source": "ats_json",
+        "method": "ats_field:linkedin"
+      },
+      {
+        "field": "links.github",
+        "source": "ats_json",
+        "method": "ats_field:github"
+      },
+      {
+        "field": "links.github",
+        "source": "resume",
+        "method": "regex:github"
+      },
+      {
+        "field": "links.github",
+        "source": "github",
+        "method": "github_api:profile"
+      },
+      {
+        "field": "links.github",
+        "source": "recruiter_notes",
+        "method": "regex:github"
+      },
+      {
+        "field": "links.portfolio",
+        "source": "github",
+        "method": "github_api:blog"
+      },
+      {
+        "field": "headline",
+        "source": "ats_json",
+        "method": "ats_field:headline"
+      },
+      {
+        "field": "years_experience",
+        "source": "ats_json",
+        "method": "ats_field:years_experience"
+      },
+      {
+        "field": "years_experience",
+        "source": "recruiter_notes",
+        "method": "regex:years_experience"
+      },
+      {
+        "field": "skills",
+        "source": "ats_json",
+        "method": "ats_field:skills"
+      },
+      {
+        "field": "skills",
+        "source": "resume",
+        "method": "resume_section:skills"
+      },
+      {
+        "field": "skills",
+        "source": "github",
+        "method": "github_api:repo_language"
+      },
+      {
+        "field": "skills",
+        "source": "recruiter_notes",
+        "method": "keyword_scan:skill"
+      },
+      {
+        "field": "experience",
+        "source": "ats_json",
+        "method": "ats_field:work_history"
+      },
+      {
+        "field": "experience",
+        "source": "recruiter_csv",
+        "method": "csv_column:current_company+title"
+      },
+      {
+        "field": "experience",
+        "source": "resume",
+        "method": "resume_section:experience"
+      },
+      {
+        "field": "experience",
+        "source": "recruiter_notes",
+        "method": "regex:at_company_as_title"
+      },
+      {
+        "field": "education",
+        "source": "ats_json",
+        "method": "ats_field:education"
+      },
+      {
+        "field": "education",
+        "source": "resume",
+        "method": "resume_section:education"
+      }
+    ],
+    "overall_confidence": 0.9
+  },
+  {
+    "candidate_id": "cand_c5315be93445",
+    "full_name": "Marcus Lee",
+    "emails": [
+      "marcus.lee@example.com"
+    ],
+    "phones": [
+      "+14155550132"
+    ],
+    "location": {
+      "city": "San Francisco",
+      "region": null,
+      "country": "US"
+    },
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": null,
+    "years_experience": null,
+    "skills": [],
+    "experience": [
+      {
+        "company": "Initech",
+        "title": "Data Engineer",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "education": [],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "recruiter_csv",
+        "method": "csv_column:name"
+      },
+      {
+        "field": "emails",
+        "source": "recruiter_csv",
+        "method": "csv_column:email"
+      },
+      {
+        "field": "phones",
+        "source": "recruiter_csv",
+        "method": "csv_column:phone"
+      },
+      {
+        "field": "location.city",
+        "source": "recruiter_csv",
+        "method": "csv_column:location"
+      },
+      {
+        "field": "location.country",
+        "source": "recruiter_csv",
+        "method": "csv_column:location"
+      },
+      {
+        "field": "experience",
+        "source": "recruiter_csv",
+        "method": "csv_column:current_company+title"
+      }
+    ],
+    "overall_confidence": 0.85
+  }
+]

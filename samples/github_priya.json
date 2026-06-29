@@ -1,0 +1,18 @@
+{
+  "user": {
+    "login": "priyasharma",
+    "name": "Priya S.",
+    "bio": "Backend engineer who loves Go and distributed systems",
+    "blog": "https://priya.dev",
+    "location": "Bengaluru, India",
+    "email": null,
+    "company": "@acme"
+  },
+  "repos": [
+    {"name": "payments-svc", "language": "Python", "fork": false},
+    {"name": "ratelimiter", "language": "Go", "fork": false},
+    {"name": "go-utils", "language": "Go", "fork": false},
+    {"name": "dotfiles", "language": "Shell", "fork": false},
+    {"name": "awesome-list", "language": "JavaScript", "fork": true}
+  ]
+}

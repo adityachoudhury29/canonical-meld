@@ -1,0 +1,13 @@
+{
+  "_comment": "Same good sources plus three deliberately broken ones (invalid JSON, empty CSV, missing file). The run must still produce the same clean profiles and only emit warnings.",
+  "sources": [
+    { "type": "recruiter_csv", "path": "recruiter.csv" },
+    { "type": "ats_json", "path": "ats.json" },
+    { "type": "resume", "path": "resume_priya.txt" },
+    { "type": "recruiter_notes", "path": "notes_priya.txt" },
+    { "type": "github", "url": "https://github.com/priyasharma", "fixture": "github_priya.json" },
+    { "type": "ats_json", "path": "broken_ats.json" },
+    { "type": "recruiter_csv", "path": "empty.csv" },
+    { "type": "ats_json", "path": "does_not_exist.json" }
+  ]
+}

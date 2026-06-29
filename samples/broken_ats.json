@@ -1,0 +1,4 @@
+{
+  "candidates": [
+    { "firstName": "Broken", "emailAddress": "oops@,,,
+    this is not valid json at all }}}

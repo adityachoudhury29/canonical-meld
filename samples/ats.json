@@ -1,0 +1,27 @@
+{
+  "candidates": [
+    {
+      "candidateId": "ats-7781",
+      "firstName": "Priya",
+      "lastName": "Sharma",
+      "emailAddress": "priya.sharma@example.com",
+      "emails": ["priya.sharma@example.com", "p.sharma@acme.com"],
+      "phoneNumber": "98765 43210",
+      "headline": "Senior Backend Engineer",
+      "yearsOfExperience": 7,
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "countryCode": "IN",
+      "linkedinUrl": "https://www.linkedin.com/in/priyasharma",
+      "githubUrl": "https://github.com/priyasharma",
+      "skillSet": ["Python", "Go", "Kubernetes", "PostgreSQL", "JS"],
+      "workHistory": [
+        {"employer": "Acme Corp", "position": "Senior Backend Engineer", "startDate": "2021-03", "endDate": "Present"},
+        {"employer": "Globex", "position": "Backend Engineer", "startDate": "2018-06", "endDate": "2021-02"}
+      ],
+      "educationHistory": [
+        {"school": "IIT Bombay", "degree": "B.Tech", "fieldOfStudy": "Computer Science", "graduationYear": 2018}
+      ]
+    }
+  ]
+}

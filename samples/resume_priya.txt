@@ -1,0 +1,21 @@
+Priya Sharma
+Backend Engineer
+
+priya.sharma@example.com | github.com/priyasharma | linkedin.com/in/priyasharma
+Bangalore, India
+
+Summary
+Backend engineer focused on distributed systems, payments, and APIs.
+
+Skills
+Python, Golang, Docker, REST APIs, k8s, PostgreSQL
+
+Experience
+Senior Backend Engineer — Acme Corp (Mar 2021 - Present)
+Built and scaled payment services handling millions of requests per day.
+
+Backend Engineer — Globex (Jun 2018 - Feb 2021)
+Owned the data ingestion pipeline and on-call rotation.
+
+Education
+IIT Bombay — B.Tech, Computer Science (2018)

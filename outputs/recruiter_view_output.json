@@ -1,0 +1,45 @@
+[
+  {
+    "full_name": "Priya Sharma",
+    "primary_email": "priya.sharma@example.com",
+    "phone": "+919876543210",
+    "skills": [
+      "Go",
+      "Python",
+      "Kubernetes",
+      "PostgreSQL",
+      "JavaScript",
+      "Docker",
+      "REST",
+      "Shell",
+      "React"
+    ],
+    "current_title": "Senior Backend Engineer",
+    "country": "IN",
+    "confidence": {
+      "full_name": 0.89,
+      "primary_email": 0.95,
+      "phone": 0.98,
+      "skills": 0.81,
+      "current_title": 0.98,
+      "country": 0.99
+    },
+    "overall_confidence": 0.9
+  },
+  {
+    "full_name": "Marcus Lee",
+    "primary_email": "marcus.lee@example.com",
+    "phone": "+14155550132",
+    "skills": [],
+    "current_title": "Data Engineer",
+    "country": "US",
+    "confidence": {
+      "full_name": 0.85,
+      "primary_email": 0.85,
+      "phone": 0.85,
+      "current_title": 0.85,
+      "country": 0.85
+    },
+    "overall_confidence": 0.85
+  }
+]

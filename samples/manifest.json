@@ -1,0 +1,9 @@
+{
+  "sources": [
+    { "type": "recruiter_csv", "path": "recruiter.csv" },
+    { "type": "ats_json", "path": "ats.json" },
+    { "type": "resume", "path": "resume_priya.txt" },
+    { "type": "recruiter_notes", "path": "notes_priya.txt" },
+    { "type": "github", "url": "https://github.com/priyasharma", "fixture": "github_priya.json" }
+  ]
+}

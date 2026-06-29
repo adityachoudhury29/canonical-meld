@@ -1,0 +1,8 @@
+# Runtime
+phonenumbers>=8.13
+
+# Optional: enables reading .pdf resumes (the resume adapter degrades gracefully without it)
+pypdf>=4.0
+
+# Dev / tests
+pytest>=7.0
