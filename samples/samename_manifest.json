@@ -1,0 +1,9 @@
+{
+  "_comment": "Two DIFFERENT people who share the name 'John Doe'. John Doe A appears in 3 sources (a recruiter CSV row + an ATS record + a resume, all linked by john.doe@alpha.com); John Doe B in 2 (a recruiter CSV row + recruiter notes, linked by john.doe@beta.com). They must resolve to TWO separate profiles — never fused on the shared name.",
+  "sources": [
+    { "type": "recruiter_csv", "path": "samename_recruiter.csv" },
+    { "type": "ats_json", "path": "samename_ats.json" },
+    { "type": "resume", "path": "samename_resume.txt" },
+    { "type": "recruiter_notes", "path": "samename_notes.txt" }
+  ]
+}

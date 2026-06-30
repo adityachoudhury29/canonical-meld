@@ -1,0 +1,14 @@
+{
+  "candidates": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "emailAddress": "john.doe@alpha.com",
+      "headline": "Senior Backend Engineer",
+      "yearsOfExperience": 8,
+      "skillSet": ["Python", "Go", "Kubernetes"],
+      "city": "San Francisco",
+      "countryCode": "US"
+    }
+  ]
+}

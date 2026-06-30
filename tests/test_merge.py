@@ -40,6 +40,41 @@ class TestEntityResolution:
         # same 10-digit tail -> one cluster
         assert len(resolve_entities([a, b])) == 1
 
+    def test_same_name_different_people_multi_source(self):
+        # Two different "John Doe"s, each spread across several structured +
+        # unstructured sources. Each person's own records share a strong anchor
+        # (A by email, B by github username); the two people share none. They must
+        # consolidate per-person and stay segregated despite identical names.
+        records = [
+            # John Doe A — 3 sources, linked by his email
+            make_record("recruiter_csv", full_name="John Doe",
+                        emails="john.doe@alpha.com", phones="+14155550111",
+                        skills=["Python", "Go"]),
+            make_record("ats_json", full_name="John Doe",
+                        emails="john.doe@alpha.com", headline="Backend Engineer"),
+            make_record("resume", full_name="John Doe",
+                        emails="john.doe@alpha.com", skills="Kubernetes"),
+            # John Doe B — 2 sources, linked by his github username (different person)
+            make_record("resume", full_name="John Doe",
+                        links__github="https://github.com/johndoe-b", skills="Rust"),
+            make_record("github", full_name="John Doe",
+                        links__github="https://github.com/johndoe-b", skills="Rust"),
+        ]
+        clusters = resolve_entities(records)
+        assert len(clusters) == 2  # not fused on the shared name
+
+        profiles = [merge_cluster(c) for c in clusters]
+        assert len({p.candidate_id for p in profiles}) == 2  # distinct identities
+
+        a = next(p for p in profiles if p.emails == ["john.doe@alpha.com"])
+        b = next(p for p in profiles if not p.emails)
+        # A consolidated all three of his sources; B's data did not bleed in
+        assert {s.name for s in a.skills} == {"Python", "Go", "Kubernetes"}
+        assert a.phones == ["+14155550111"]
+        # B is wholly its own person
+        assert b.links.github == "https://github.com/johndoe-b"
+        assert {s.name for s in b.skills} == {"Rust"}
+
 
 class TestConflictResolution:
     def test_agreement_beats_lone_dissenter(self):

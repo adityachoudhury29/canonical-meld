@@ -1,0 +1,4 @@
+Candidate: John Doe
+
+Spoke with John on a quick call, reachable at john.doe@beta.com. Around 5 years
+in data engineering. Strong in Java and SQL, currently at Globex.

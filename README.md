@@ -176,6 +176,7 @@ Full produced outputs are committed under [`outputs/`](outputs/):
 3. **Unparseable phone** → dropped, never emitted as a fake E.164.
 4. **Cross-source dedup** — the same phone in 3 formats collapses to one `+E.164`; `Go`/`Golang`/repo-language all merge to one skill.
 5. **`required` field missing under a custom config** → validation fails loudly (non-zero exit), pointing at the field.
+6. **Same name, different people** — two "John Doe"s are **never fused on name alone**; each consolidates only via shared strong anchors (email / phone tail / GitHub / LinkedIn username), so one John Doe across 3 sources and another across 2 resolve to **two separate profiles with no field bleed**. (Honest limit: if a single person's records share *no* anchor at all, they stay split rather than risk a wrong merge — under-merge is safe, over-merge pollutes hiring.)
 
 ## Determinism, robustness, scale
 
@@ -186,7 +187,7 @@ Full produced outputs are committed under [`outputs/`](outputs/):
 ## Tests
 
 ```bash
-pytest -q          # 69 tests
+pytest -q          # 70 tests
 ```
 
 Covers normalizers, entity resolution & conflict resolution, the projection path
