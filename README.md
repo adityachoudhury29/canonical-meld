@@ -220,3 +220,5 @@ samples/           sample inputs + manifests
 outputs/           produced JSON (committed as evidence)
 tests/             pytest suite
 ```
+
+Demo Video URL: https://drive.google.com/file/d/1lKqBPyUyPPflDYEz5tjdo9jLJ-rfAyOz/view?usp=sharing
