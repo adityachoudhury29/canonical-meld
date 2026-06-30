@@ -1,5 +1,7 @@
 # Canonical Profile Builder
 
+Demo Video URL: https://drive.google.com/file/d/1lKqBPyUyPPflDYEz5tjdo9jLJ-rfAyOz/view?usp=sharing
+
 Turns messy, overlapping candidate data from many sources into **one clean,
 canonical profile** per person — normalized, deduplicated, and carrying a record
 of **where each value came from (provenance)** and **how confident we are
@@ -221,4 +223,3 @@ outputs/           produced JSON (committed as evidence)
 tests/             pytest suite
 ```
 
-Demo Video URL: https://drive.google.com/file/d/1lKqBPyUyPPflDYEz5tjdo9jLJ-rfAyOz/view?usp=sharing
